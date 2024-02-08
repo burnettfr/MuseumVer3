@@ -29,13 +29,13 @@ function startOver(){
 
 function readAns(){
     for (var i = 0; i < numberOfQuest; i++) {
-        if (i == 0 && document.querySelectorAll("input")[i].value == "C"){
+        if (i == 0 && document.querySelectorAll("input")[i].value == "P"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 0 && document.querySelectorAll("input")[i].value != "C"){
+        if (i == 0 && document.querySelectorAll("input")[i].value != "P"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
@@ -49,80 +49,72 @@ function readAns(){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 2 && document.querySelectorAll("input")[i].value == "L"){
+        if (i == 2 && document.querySelectorAll("input")[i].value == "B"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 2 && document.querySelectorAll("input")[i].value != "L"){
+        if (i == 2 && document.querySelectorAll("input")[i].value != "B"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 3 && document.querySelectorAll("input")[i].value == "J"){
+        if (i == 3 && document.querySelectorAll("input")[i].value == "E"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 3 && document.querySelectorAll("input")[i].value != "J"){
+        if (i == 3 && document.querySelectorAll("input")[i].value != "E"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 4 && document.querySelectorAll("input")[i].value == "E"){
+        if (i == 4 && document.querySelectorAll("input")[i].value == "S"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 4 && document.querySelectorAll("input")[i].value != "E"){
+        if (i == 4 && document.querySelectorAll("input")[i].value != "S"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 5 && document.querySelectorAll("input")[i].value == "G"){
+        if (i == 5 && document.querySelectorAll("input")[i].value == "H"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 5 && document.querySelectorAll("input")[i].value != "G"){
+        if (i == 5 && document.querySelectorAll("input")[i].value != "H"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 6 && document.querySelectorAll("input")[i].value == "B"){
+        if (i == 6 && document.querySelectorAll("input")[i].value == "T"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 6 && document.querySelectorAll("input")[i].value != "B"){
+        if (i == 6 && document.querySelectorAll("input")[i].value != "T"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 7 && document.querySelectorAll("input")[i].value == "K"){
+        if (i == 7 && document.querySelectorAll("input")[i].value == "L"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 7 && document.querySelectorAll("input")[i].value != "K"){
+        if (i == 7 && document.querySelectorAll("input")[i].value != "L"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 8 && document.querySelectorAll("input")[i].value == "D"){
-            correctAns++;
-            document.querySelectorAll("input")[i].classList.remove("wrong");
-            document.querySelectorAll("input")[i].classList.add("correct");
-            document.querySelectorAll("input")[i].disabled = true
-        }
-        if (i == 8 && document.querySelectorAll("input")[i].value != "D"){
-            document.querySelectorAll("input")[i].classList.add("wrong");
-        }
+       
     }
     document.querySelectorAll("#textChange")[0].innerText = "Number Correct: " + correctAns;
-    inCorrectAns = 9 - correctAns;
-    percentCorrect = correctAns/9;
-    console.log(percentCorrect);
+    inCorrectAns = numberOfQuest - correctAns;
+    percentCorrect = correctAns/numberOfQuest;
+    // console.log(percentCorrect);
 
     if (percentCorrect < 0.35)
         popUp1(correctAns, inCorrectAns);
