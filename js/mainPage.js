@@ -5,6 +5,7 @@ document.querySelector("#button4").addEventListener("click", clickButton4);
 document.querySelector("#button5").addEventListener("click", clickButton5);
 document.querySelector("#button6").addEventListener("click", clickButton6);
 document.querySelector("#button7").addEventListener("click", clickButton7);
+document.querySelector("#button8").addEventListener("click", clickButton8);
 
 function clickButton1(){
     // console.log("Button 1 Clicked");
@@ -46,5 +47,11 @@ function clickButton6(){
 function clickButton7(){
     window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/historicChurches.html'
     // window.location.href = 'file:///C:/burnett/MuseumVer3/historicChurches.html'
+
+}
+
+function clickButton8(){
+    window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/nativeAmerican.html'
+    // window.location.href = 'file:///C:/burnett/MuseumVer3/nativeAmerican.html'
 
 }
