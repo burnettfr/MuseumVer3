@@ -3,6 +3,7 @@ document.querySelector("#button2").addEventListener("click", clickButton2);
 document.querySelector("#button3").addEventListener("click", clickButton3);
 document.querySelector("#button4").addEventListener("click", clickButton4);
 document.querySelector("#button5").addEventListener("click", clickButton5);
+document.querySelector("#button6").addEventListener("click", clickButton6);
 
 function clickButton1(){
     // console.log("Button 1 Clicked");
@@ -32,5 +33,11 @@ function clickButton4(){
 function clickButton5(){
     window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/folklore.html'
     // window.location.href = 'file:///C:/burnett/MuseumVer3/folklore.html'
+
+}
+
+function clickButton6(){
+    window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/gullahFoodways.html'
+    // window.location.href = 'file:///C:/burnett/MuseumVer3/gullahFoodways.html'
 
 }
