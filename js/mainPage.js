@@ -2,6 +2,7 @@ document.querySelector("#button1").addEventListener("click", clickButton1);
 document.querySelector("#button2").addEventListener("click", clickButton2);
 document.querySelector("#button3").addEventListener("click", clickButton3);
 document.querySelector("#button4").addEventListener("click", clickButton4);
+document.querySelector("#button5").addEventListener("click", clickButton5);
 
 function clickButton1(){
     // console.log("Button 1 Clicked");
@@ -25,5 +26,11 @@ function clickButton3(){
 function clickButton4(){
     window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/folkMedicine.html'
     // window.location.href = 'file:///C:/burnett/MuseumVer3/folkMedicine.html'
+
+}
+
+function clickButton5(){
+    window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/folklore.html'
+    // window.location.href = 'file:///C:/burnett/MuseumVer3/folklore.html'
 
 }

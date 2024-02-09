@@ -116,7 +116,7 @@ https://colorhunt.co/palette/ffecd64cb9e73559e00f2167 */
 
 .quest{
     display: grid;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto 1fr;
     grid-template-columns: 1fr 16fr 1.5fr;
 }
 
