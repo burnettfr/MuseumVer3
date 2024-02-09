@@ -4,6 +4,7 @@ document.querySelector("#button3").addEventListener("click", clickButton3);
 document.querySelector("#button4").addEventListener("click", clickButton4);
 document.querySelector("#button5").addEventListener("click", clickButton5);
 document.querySelector("#button6").addEventListener("click", clickButton6);
+document.querySelector("#button7").addEventListener("click", clickButton7);
 
 function clickButton1(){
     // console.log("Button 1 Clicked");
@@ -39,5 +40,11 @@ function clickButton5(){
 function clickButton6(){
     window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/gullahFoodways.html'
     // window.location.href = 'file:///C:/burnett/MuseumVer3/gullahFoodways.html'
+
+}
+
+function clickButton7(){
+    window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/historicChurches.html'
+    // window.location.href = 'file:///C:/burnett/MuseumVer3/historicChurches.html'
 
 }
