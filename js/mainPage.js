@@ -1,11 +1,12 @@
 document.querySelector("#button1").addEventListener("click", clickButton1);
-document.querySelector("#button2").addEventListener("click", clickButton2);
+document.querySelector("#button9").addEventListener("click", clickButton9);
 document.querySelector("#button3").addEventListener("click", clickButton3);
 document.querySelector("#button4").addEventListener("click", clickButton4);
 document.querySelector("#button5").addEventListener("click", clickButton5);
 document.querySelector("#button6").addEventListener("click", clickButton6);
 document.querySelector("#button7").addEventListener("click", clickButton7);
 document.querySelector("#button8").addEventListener("click", clickButton8);
+document.querySelector("#button10").addEventListener("click", clickButton10);
 
 function clickButton1(){
     // console.log("Button 1 Clicked");
@@ -14,7 +15,7 @@ function clickButton1(){
 
 }
 
-function clickButton2(){
+function clickButton9(){
     window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/reconstruction.html'
     // window.location.href = 'file:///C:/burnett/MuseumVer3/reconstruction.html'
 
@@ -53,5 +54,11 @@ function clickButton7(){
 function clickButton8(){
     window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/nativeAmerican.html'
     // window.location.href = 'file:///C:/burnett/MuseumVer3/nativeAmerican.html'
+
+}
+
+function clickButton10(){
+    window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/spiritualTraditions.html'
+    // window.location.href = 'file:///C:/burnett/MuseumVer3/spiritualTraditions.html'
 
 }
