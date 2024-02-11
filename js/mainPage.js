@@ -8,6 +8,7 @@ document.querySelector("#button7").addEventListener("click", clickButton7);
 document.querySelector("#button8").addEventListener("click", clickButton8);
 document.querySelector("#button10").addEventListener("click", clickButton10);
 document.querySelector("#button11").addEventListener("click", clickButton11);
+document.querySelector("#button12").addEventListener("click", clickButton12);
 
 function clickButton1(){
     // console.log("Button 1 Clicked");
@@ -67,5 +68,11 @@ function clickButton10(){
 function clickButton11(){
     window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/sunnyside.html'
     // window.location.href = 'file:///C:/burnett/MuseumVer3/sunnyside.html'
+
+}
+
+function clickButton12(){
+    window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/naturalHistory.html'
+    // window.location.href = 'file:///C:/burnett/MuseumVer3/naturalHistory.html'
 
 }
