@@ -6,6 +6,24 @@ correctAns = 0;
 // console.log(document.querySelectorAll("select")[0].name);
 // console.log(document.querySelectorAll("select")[0].value);
 
+let snip1 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
+let snip2 = new Audio("Songs/Aint That Peculiar Snippet.mp3");
+let snip3 = new Audio("Songs/ItsTheSameOldSong Snippet.mp3");
+let snip4 = new Audio("Songs/Bernadette Snippet.mp3");
+let snip5 = new Audio("Songs/You Cant Hurry Love Snippet.mp3");
+let snip6 = new Audio("Songs/ReachOutI'llBeThere Snippet.mp3");
+let snip7 = new Audio("Songs/What'sGoingOnSnippet.mp3");
+let snip8 = new Audio("Songs/My Girl Snippet.mp3");
+let snip9 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
+let snip10 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
+let snip11 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
+let snip12 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
+
+numberOfSongs = 12;
+
+let songs = [snip1, snip2, snip3, snip4, snip5, snip6, snip7, snip8,
+             snip9, snip10, snip11, snip12];
+
 
 for (var i = 0; i < numberOfButtons - 2; i = i +2) {
     document.querySelectorAll("button")[i].addEventListener("click", function(){
@@ -20,6 +38,7 @@ for (var i = 1; i < numberOfButtons - 2; i = i +2) {
         // console.log(document.querySelectorAll("button")[i].innerText);
         var buttonId = this.id;
         buttonAnimation2(buttonId);
+        pauseAll();
     });
 }
 
@@ -33,140 +52,81 @@ document.querySelector("#button3").addEventListener("click", welcome);
 
 function songClick(id){
     // console.log(id);
+    for(var i = 0; i < numberOfSongs; i++) {
+        songs[i].pause()
+      } 
     buttonAnimation2(id);
 
     switch (id) {
         case "song1":
-          var snip1 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
-          snip1.play();
+            snip1.play();
 
-          document.querySelector("#song1p").addEventListener("click", function(){
-            // var bId = this.id;
-            // console.log("You pressed button with ID: " + bId);
-            snip1.pause();
-            });
+            // document.querySelector("#song1p").addEventListener("click", function(){
+            // // var bId = this.id;
+            // // console.log("You pressed button with ID: " + bId);
+            //     snip1.pause();
+            // });
 
-          break
+            break
 
         case "song2":
-          var snip2 = new Audio("Songs/Aint That Peculiar Snippet.mp3");
-          snip2.play();
-
-          document.querySelector("#song2p").addEventListener("click", function(){
-            snip2.pause();
-            });
-
-          break
+            snip2.play();
+            break
 
         case "song3":
-           var snip3 = new Audio("Songs/ItsTheSameOldSong Snippet.mp3");
-           snip3.play();
-
-           document.querySelector("#song3p").addEventListener("click", function(){
-            snip3.pause();
-            });
-
-           break;
+            snip3.play();
+            break;
 
         case "song4":
-           var snip4 = new Audio("Songs/Bernadette Snippet.mp3");
-           snip4.play();
-
-           document.querySelector("#song4p").addEventListener("click", function(){
-            snip4.pause();
-            });
-
-           break;
+            snip4.play();
+            break;
 
         case "song5":
-           var snip5 = new Audio("Songs/You Cant Hurry Love Snippet.mp3");
-           snip5.play();
-
-           document.querySelector("#song5p").addEventListener("click", function(){
-            snip5.pause();
-            });
-
-           break;
+            snip5.play();
+            break;
 
         case "song6":
-            var snip6 = new Audio("Songs/ReachOutI'llBeThere Snippet.mp3");
             snip6.play();
-
-            document.querySelector("#song6p").addEventListener("click", function(){
-            snip6.pause();
-            });
-
             break;
 
         case "song7":
-            var snip7 = new Audio("Songs/What'sGoingOnSnippet.mp3");
             snip7.play();
-
-            document.querySelector("#song7p").addEventListener("click", function(){
-            snip7.pause();
-            });
-
             break;
 
         case "song8":
-            var snip8 = new Audio("Songs/My Girl Snippet.mp3");
             snip8.play();
-
-            document.querySelector("#song8p").addEventListener("click", function(){
-                snip8.pause();
-                });
-
             break;
 
         case "song9":
-            var snip9 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
             snip9.play();
-
-            document.querySelector("#song9p").addEventListener("click", function(){
-                snip9.pause();
-                });
-
             break;
 
         case "song10":
-            var snip10 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
             snip10.play();
-
-            document.querySelector("#song10p").addEventListener("click", function(){
-                snip10.pause();
-                });
-
             break;
 
         case "song11":
-            var snip11 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
             snip11.play();
-
-            document.querySelector("#song11p").addEventListener("click", function(){
-                snip11.pause();
-                });
-
             break;
 
         case "song12":
-            var snip12 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
-            snip12.play();
-
-            document.querySelector("#song12p").addEventListener("click", function(){
-                snip12.pause();
-                });
-
+            snip12.play(); 
             break;
     
         // default: console.log("Unknown");
     }
 }
 
+function pauseAll(){
+    for(var i = 0; i < numberOfSongs; i++) {
+        console.log("main for loop");  
+        songs[i].pause()
+      } 
+}
+
 function pauseClick(id){
     // console.log(id);
     buttonAnimation2(id);
-
-    
 }
 
 function handleClick(){
