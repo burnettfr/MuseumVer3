@@ -1,5 +1,7 @@
 numberOfQuest = document.querySelectorAll("input").length;
 numberOfButtons = document.querySelectorAll("button").length;
+numberOfSongs = numberOfQuest;
+
 var answers = [];
 correctAns = 0;
 // console.log(numberOfButtons);
@@ -7,22 +9,22 @@ correctAns = 0;
 // console.log(document.querySelectorAll("select")[0].value);
 
 let snip1 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
-let snip2 = new Audio("Songs/Aint That Peculiar Snippet.mp3");
-let snip3 = new Audio("Songs/ItsTheSameOldSong Snippet.mp3");
+let snip2 = new Audio("Songs/CloudNine Snippet.mp3");
+let snip3 = new Audio("Songs/ISecondThatEmotion Snippet.mp3");
 let snip4 = new Audio("Songs/Bernadette Snippet.mp3");
 let snip5 = new Audio("Songs/You Cant Hurry Love Snippet.mp3");
-let snip6 = new Audio("Songs/ReachOutI'llBeThere Snippet.mp3");
-let snip7 = new Audio("Songs/What'sGoingOnSnippet.mp3");
-let snip8 = new Audio("Songs/My Girl Snippet.mp3");
-let snip9 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
-let snip10 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
-let snip11 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
-let snip12 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
-
-numberOfSongs = 12;
+let snip6 = new Audio("Songs/My Girl Snippet.mp3");
+let snip7 = new Audio("Songs/IHeardItThroughTheGrapevine Snippet.mp3");
+let snip8 = new Audio("Songs/ReachOutI'llBeThere Snippet.mp3");
+let snip9 = new Audio("Songs/(IKnow)I'mLosingYou Snippet.mp3");
+let snip10 = new Audio("Songs/ICan'tHelpMyself(SugarPieHoneyBunch) Snippet.mp3");
+let snip11 = new Audio("Songs/Ain'tNoMountainHighEnough Snippet.mp3");
+let snip12 = new Audio("Songs/What'sGoingOnSnippet.mp3");
+let snip13 = new Audio("Songs/ItsTheSameOldSong Snippet.mp3");
+let snip14 = new Audio("Songs/Aint That Peculiar Snippet.mp3");
 
 let songs = [snip1, snip2, snip3, snip4, snip5, snip6, snip7, snip8,
-             snip9, snip10, snip11, snip12];
+             snip9, snip10, snip11, snip12, snip13, snip14];
 
 
 for (var i = 0; i < numberOfButtons - 2; i = i +2) {
@@ -112,6 +114,14 @@ function songClick(id){
         case "song12":
             snip12.play(); 
             break;
+
+        case "song13":
+            snip13.play(); 
+            break;
+
+        case "song14":
+            snip14.play(); 
+            break;
     
         // default: console.log("Unknown");
     }
@@ -119,7 +129,6 @@ function songClick(id){
 
 function pauseAll(){
     for(var i = 0; i < numberOfSongs; i++) {
-        console.log("main for loop");  
         songs[i].pause()
       } 
 }
@@ -146,33 +155,33 @@ function startOver(){
 
 function readAns(){
     for (var i = 0; i < numberOfQuest; i++) {
-        if (i == 0 && document.querySelectorAll("input")[i].value == "J"){
+        if (i == 0 && document.querySelectorAll("input")[i].value == "L"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 0 && document.querySelectorAll("input")[i].value != "J"){
+        if (i == 0 && document.querySelectorAll("input")[i].value != "L"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 1 && document.querySelectorAll("input")[i].value == "H"){
+        if (i == 1 && document.querySelectorAll("input")[i].value == "N"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 1 && document.querySelectorAll("input")[i].value != "H"){
+        if (i == 1 && document.querySelectorAll("input")[i].value != "N"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 2 && document.querySelectorAll("input")[i].value == "B"){
+        if (i == 2 && document.querySelectorAll("input")[i].value == "K"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 2 && document.querySelectorAll("input")[i].value != "B"){
+        if (i == 2 && document.querySelectorAll("input")[i].value != "K"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
@@ -186,23 +195,23 @@ function readAns(){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 4 && document.querySelectorAll("input")[i].value == "K"){
+        if (i == 4 && document.querySelectorAll("input")[i].value == "M"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 4 && document.querySelectorAll("input")[i].value != "K"){
+        if (i == 4 && document.querySelectorAll("input")[i].value != "M"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 5 && document.querySelectorAll("input")[i].value == "C"){
+        if (i == 5 && document.querySelectorAll("input")[i].value == "P"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 5 && document.querySelectorAll("input")[i].value != "C"){
+        if (i == 5 && document.querySelectorAll("input")[i].value != "P"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
@@ -216,43 +225,43 @@ function readAns(){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 7 && document.querySelectorAll("input")[i].value == "L"){
+        if (i == 7 && document.querySelectorAll("input")[i].value == "D"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 7 && document.querySelectorAll("input")[i].value != "L"){
+        if (i == 7 && document.querySelectorAll("input")[i].value != "D"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 8 && document.querySelectorAll("input")[i].value == "J"){
+        if (i == 8 && document.querySelectorAll("input")[i].value == "O"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 8 && document.querySelectorAll("input")[i].value != "J"){
+        if (i == 8 && document.querySelectorAll("input")[i].value != "O"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 9 && document.querySelectorAll("input")[i].value == "J"){
+        if (i == 9 && document.querySelectorAll("input")[i].value == "B"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 9 && document.querySelectorAll("input")[i].value != "J"){
+        if (i == 9 && document.querySelectorAll("input")[i].value != "B"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 10 && document.querySelectorAll("input")[i].value == "J"){
+        if (i == 10 && document.querySelectorAll("input")[i].value == "G"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 10 && document.querySelectorAll("input")[i].value != "J"){
+        if (i == 10 && document.querySelectorAll("input")[i].value != "G"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
@@ -265,10 +274,30 @@ function readAns(){
         if (i == 11 && document.querySelectorAll("input")[i].value != "J"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
+
+        if (i == 12 && document.querySelectorAll("input")[i].value == "C"){
+            correctAns++;
+            document.querySelectorAll("input")[i].classList.remove("wrong");
+            document.querySelectorAll("input")[i].classList.add("correct");
+            document.querySelectorAll("input")[i].disabled = true
+        }
+        if (i == 12 && document.querySelectorAll("input")[i].value != "C"){
+            document.querySelectorAll("input")[i].classList.add("wrong");
+        }
+
+        if (i == 13 && document.querySelectorAll("input")[i].value == "H"){
+            correctAns++;
+            document.querySelectorAll("input")[i].classList.remove("wrong");
+            document.querySelectorAll("input")[i].classList.add("correct");
+            document.querySelectorAll("input")[i].disabled = true
+        }
+        if (i == 13 && document.querySelectorAll("input")[i].value != "H"){
+            document.querySelectorAll("input")[i].classList.add("wrong");
+        }
     }
     document.querySelectorAll("#textChange")[0].innerText = "Number Correct: " + correctAns;
-    inCorrectAns = 12 - correctAns;
-    percentCorrect = correctAns/12;
+    inCorrectAns = numberOfQuest - correctAns;
+    percentCorrect = correctAns/numberOfQuest;
     console.log(percentCorrect);
 
     if (percentCorrect < 0.35)
