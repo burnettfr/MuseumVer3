@@ -142,8 +142,8 @@ function buttonAnimation(buttonNumber) {
 
 
  function welcome(){
-    window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/mainPage.html'
-    // window.location.href = 'file:///C:/burnett/MuseumVer2/mainPage.html'
+    // window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/mainPage.html'
+    window.location.href = 'file:///C:/burnett/MuseumVer3/mainPage.html'
 
  }
 
