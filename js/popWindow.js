@@ -26,16 +26,23 @@
 
    myWindow.document.write("<style>html{background-color: green}</style>");
 
-   myWindow.document.write("<h1 style = 'text-align: center'>Good News</h1>");
-   myWindow.document.write("<h1 style = 'text-align: center'>Lots of Opportunity to Improve</h1>");
+   myWindow.document.write("<br>");
+   myWindow.document.write("<br>");
+   myWindow.document.write("<br>");
+   myWindow.document.write("<br>");
+
    
-   myWindow.document.write("<h1 style = 'text-align: center; font-size: 10rem; margin: 0px'>&#128169</h1>");
+
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>Good News</h1>");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>Lots of Opportunity to Improve</h1>");
    
-   myWindow.document.write("<h1 style = 'text-align: center; margin-top: 40px'>Number Correct: ");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 15rem; margin: 0px'>&#128169</h1>");
+   
+   myWindow.document.write("<h1 style = 'text-align: center; ; font-size: 5rem; margin-top: 40px'>Number Correct: ");
    myWindow.document.write(correct);
    myWindow.document.write("</h1>");
    
-   myWindow.document.write("<h1 style = 'text-align: center'>Number Incorrect: ");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>Number Incorrect: ");
    myWindow.document.write(incorrect);
    myWindow.document.write("</h1>");
 
@@ -50,16 +57,16 @@
 
     myWindow.document.write("<style>html{background-color: FFF8E3}</style>");
 
-    myWindow.document.write("<h1 style = 'text-align: center'>Not Bad</h1>");
-    myWindow.document.write("<h1 style = 'text-align: center'>About Half the Answers Are Correct</h1>");
+    myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>Not Bad</h1>");
+    myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>About Half the Answers Are Correct</h1>");
     
-    myWindow.document.write("<h1 style = 'text-align: center; font-size: 10rem; margin: 0px'>&#128055</h1>");
+    myWindow.document.write("<h1 style = 'text-align: center; font-size: 15rem; margin: 0px'>&#128055</h1>");
     
-    myWindow.document.write("<h1 style = 'text-align: center; margin-top: 40px'>Number Correct: ");
+    myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem; margin-top: 40px'>Number Correct: ");
     myWindow.document.write(correct);
     myWindow.document.write("</h1>");
     
-    myWindow.document.write("<h1 style = 'text-align: center'>Number Incorrect: ");
+    myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>Number Incorrect: ");
     myWindow.document.write(incorrect);
     myWindow.document.write("</h1>");
 
@@ -73,16 +80,16 @@
 
    myWindow.document.write("<style>html{background-color: FF78F0}</style>");
 
-   myWindow.document.write("<h1 style = 'text-align: center'>Wow!</h1>");
-   myWindow.document.write("<h1 style = 'text-align: center'>Most of the Answers Are Correct</h1>");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>Wow!</h1>");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>Most of the Answers Are Correct</h1>");
    
-   myWindow.document.write("<h1 style = 'text-align: center; font-size: 10rem; margin: 0px'>&#129312</h1>");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 15rem; margin: 0px'>&#129312</h1>");
    
-   myWindow.document.write("<h1 style = 'text-align: center; margin-top: 40px'>Number Correct: ");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem; margin-top: 40px'>Number Correct: ");
    myWindow.document.write(correct);
    myWindow.document.write("</h1>");
    
-   myWindow.document.write("<h1 style = 'text-align: center'>Number Incorrect: ");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>Number Incorrect: ");
    myWindow.document.write(incorrect);
    myWindow.document.write("</h1>");
 
@@ -97,17 +104,17 @@ function popUp4(correct, incorrect){
 
    myWindow.document.write("<style>html{background-color: FFF5E0}</style>");
 
-   myWindow.document.write("<h1 style = 'text-align: center'>You Are a Super Genius!!!</h1>");
-   myWindow.document.write("<h1 style = 'text-align: center'>All of the Answers Are Correct</h1>");
-   myWindow.document.write("<h1 style = 'text-align: center'>Nobody Gets Close to You</h1>");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>You Are a Super Genius!!!</h1>");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>All of the Answers Are Correct</h1>");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>Nobody Gets Close to You</h1>");
    
-   myWindow.document.write("<h1 style = 'text-align: center; font-size: 10rem; margin: 0px'>🦨</h1>");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 15rem; margin: 0px'>🦨</h1>");
    
-   myWindow.document.write("<h1 style = 'text-align: center; margin-top: 40px'>Number Correct: ");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem; margin-top: 40px'>Number Correct: ");
    myWindow.document.write(correct);
    myWindow.document.write("</h1>");
    
-   myWindow.document.write("<h1 style = 'text-align: center'>Number Incorrect: ");
+   myWindow.document.write("<h1 style = 'text-align: center; font-size: 5rem'>Number Incorrect: ");
    myWindow.document.write(incorrect);
    myWindow.document.write("</h1>");
 
