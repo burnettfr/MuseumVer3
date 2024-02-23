@@ -29,63 +29,63 @@ function startOver(){
 
 function readAns(){
     for (var i = 0; i < numberOfQuest; i++) {
-        if (i == 0 && document.querySelectorAll("input")[i].value == "D"){
+        if (i == 0 && document.querySelectorAll("input")[i].value.toUpperCase() == "D"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 0 && document.querySelectorAll("input")[i].value != "D"){
+        if (i == 0 && document.querySelectorAll("input")[i].value.toUpperCase() != "D"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 1 && document.querySelectorAll("input")[i].value == "F"){
+        if (i == 1 && document.querySelectorAll("input")[i].value.toUpperCase() == "F"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 1 && document.querySelectorAll("input")[i].value != "F"){
+        if (i == 1 && document.querySelectorAll("input")[i].value.toUpperCase() != "F"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 2 && document.querySelectorAll("input")[i].value == "G"){
+        if (i == 2 && document.querySelectorAll("input")[i].value.toUpperCase() == "G"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 2 && document.querySelectorAll("input")[i].value != "G"){
+        if (i == 2 && document.querySelectorAll("input")[i].value.toUpperCase() != "G"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 3 && document.querySelectorAll("input")[i].value == "H"){
+        if (i == 3 && document.querySelectorAll("input")[i].value.toUpperCase() == "H"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 3 && document.querySelectorAll("input")[i].value != "H"){
+        if (i == 3 && document.querySelectorAll("input")[i].value.toUpperCase() != "H"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 4 && document.querySelectorAll("input")[i].value == "J"){
+        if (i == 4 && document.querySelectorAll("input")[i].value.toUpperCase() == "J"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 4 && document.querySelectorAll("input")[i].value != "J"){
+        if (i == 4 && document.querySelectorAll("input")[i].value.toUpperCase() != "J"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 5 && document.querySelectorAll("input")[i].value == "G"){
+        if (i == 5 && document.querySelectorAll("input")[i].value.toUpperCase() == "G"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 5 && document.querySelectorAll("input")[i].value != "G"){
+        if (i == 5 && document.querySelectorAll("input")[i].value.toUpperCase() != "G"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
        
