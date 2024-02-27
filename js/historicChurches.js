@@ -49,13 +49,13 @@ function readAns(){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 2 && document.querySelectorAll("input")[i].value.toUpperCase() == "G"){
+        if (i == 2 && document.querySelectorAll("input")[i].value.toUpperCase() == "K"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 2 && document.querySelectorAll("input")[i].value.toUpperCase() != "G"){
+        if (i == 2 && document.querySelectorAll("input")[i].value.toUpperCase() != "K"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
@@ -79,13 +79,13 @@ function readAns(){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 5 && document.querySelectorAll("input")[i].value.toUpperCase() == "G"){
+        if (i == 5 && document.querySelectorAll("input")[i].value.toUpperCase() == "K"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 5 && document.querySelectorAll("input")[i].value.toUpperCase() != "G"){
+        if (i == 5 && document.querySelectorAll("input")[i].value.toUpperCase() != "K"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
        
