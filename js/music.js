@@ -39,7 +39,7 @@ for (var i = 1; i < numberOfButtons - 2; i = i +2) {
     document.querySelectorAll("button")[i].addEventListener("click", function(){
         // console.log(document.querySelectorAll("button")[i].innerText);
         var buttonId = this.id;
-        buttonAnimation2(buttonId);
+        buttonAnimation(buttonId);
         pauseAll();
     });
 }
@@ -57,6 +57,11 @@ function songClick(id){
     for(var i = 0; i < numberOfSongs; i++) {
         songs[i].pause()
       } 
+
+    for (var i = 0; i < numberOfButtons - 2; i = i +2) {
+        document.querySelectorAll("button")[i].classList.remove("pressed");
+    }
+
     buttonAnimation2(id);
 
     switch (id) {
@@ -140,7 +145,7 @@ function pauseClick(id){
 
 function handleClick(){
     buttonNumber = 1;
-    buttonAnimation(buttonNumber);
+    buttonAnimation3(buttonNumber);
     correctAns = 0;
     /*alert("I got clicked");*/
     readAns();
@@ -148,9 +153,10 @@ function handleClick(){
 
 function startOver(){
     buttonNumber = 2;
-    buttonAnimation(buttonNumber);
+    buttonAnimation3(buttonNumber);
     /*alert("Start Over");*/
     reset();
+    pauseAll();
 }
 
 function readAns(){
@@ -319,13 +325,18 @@ function reset(){
         document.querySelectorAll("input")[i].disabled = false
     }
 
+    for (var i = 0; i < numberOfButtons - 2; i = i +2) {
+        document.querySelectorAll("button")[i].classList.remove("pressed");
+    }
+
     document.querySelectorAll("#textChange")[0].innerText = "Number Correct:";
 }
 
 function buttonAnimation(buttonNumber) {
     // console.log(buttonNumber);
     
-    var activeButton = document.querySelector("#button" + buttonNumber);
+    // var activeButton = document.querySelector("#button" + buttonNumber);
+    var activeButton = document.querySelector("#" + buttonNumber);
   
     activeButton.classList.add("pressed");
   
@@ -342,14 +353,31 @@ function buttonAnimation(buttonNumber) {
   
     activeButton.classList.add("pressed");
   
+    // setTimeout(function() {
+    //   activeButton.classList.remove("pressed");
+    // }, 100);
+    
+  }
+
+  function buttonAnimation3(buttonNumber) {
+    // console.log(buttonNumber);
+    
+    var activeButton = document.querySelector("#button" + buttonNumber);
+    // var activeButton = document.querySelector("#" + buttonNumber);
+  
+    activeButton.classList.add("pressed");
+  
     setTimeout(function() {
       activeButton.classList.remove("pressed");
     }, 100);
     
   }
 
+
+  
+
 function welcome(){
-    // window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/mainPage.html';
-    window.location.href = 'file:///C:/burnett/MuseumVer3/mainPage.html';
+    window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/mainPage.html';
+    // window.location.href = 'file:///C:/burnett/MuseumVer3/mainPage.html';
 
 }

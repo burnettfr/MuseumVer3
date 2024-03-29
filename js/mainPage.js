@@ -12,8 +12,8 @@ document.querySelector("#button12").addEventListener("click", clickButton12);
 
 function clickButton1(){
     // console.log("Button 1 Clicked");
-    // window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/music.html'
-    window.location.href = 'file:///C:/burnett/MuseumVer3/music.html'
+    window.location.href = 'file:///C:/Gronkle/Engineering/Web%20Development/Museum/Ver3/music.html'
+    //window.location.href = 'file:///C:/burnett/MuseumVer3/music.html'
 
 }
 
