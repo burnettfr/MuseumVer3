@@ -91,22 +91,22 @@ https://colorhunt.co/palette/ffecd64cb9e73559e00f2167 */
 
 #div2{
     display: grid;
-    grid-template-rows: 30px auto;
+    grid-template-rows: 60px auto;
     grid-template-columns: 2fr 1fr;
     gap: 30px;
 }
 
 .div2Height{
-    height: 30px;
+    height: 60px;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 10fr 1fr;
 }
 
 .div3Height{
-    height: 30px;
+    height: 60px;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
 }
 
@@ -224,4 +224,9 @@ https://colorhunt.co/palette/ffecd64cb9e73559e00f2167 */
 
 .newtest{
     color: gray;
+}
+
+.span3{
+    grid-row: span 2;
+    align-self: center;
 }
