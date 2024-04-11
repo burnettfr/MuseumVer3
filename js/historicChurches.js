@@ -79,13 +79,13 @@ function readAns(){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
 
-        if (i == 5 && document.querySelectorAll("input")[i].value.toUpperCase() == "K"){
+        if (i == 5 && document.querySelectorAll("input")[i].value.toUpperCase() == "B"){
             correctAns++;
             document.querySelectorAll("input")[i].classList.remove("wrong");
             document.querySelectorAll("input")[i].classList.add("correct");
             document.querySelectorAll("input")[i].disabled = true
         }
-        if (i == 5 && document.querySelectorAll("input")[i].value.toUpperCase() != "K"){
+        if (i == 5 && document.querySelectorAll("input")[i].value.toUpperCase() != "B"){
             document.querySelectorAll("input")[i].classList.add("wrong");
         }
        
