@@ -8,20 +8,20 @@ correctAns = 0;
 // console.log(document.querySelectorAll("select")[0].name);
 // console.log(document.querySelectorAll("select")[0].value);
 
-let snip1 = new Audio("Songs/IWasMadeToLoveHer Snippet.mp3");
-let snip2 = new Audio("Songs/CloudNine Snippet.mp3");
-let snip3 = new Audio("Songs/ISecondThatEmotion Snippet.mp3");
-let snip4 = new Audio("Songs/Bernadette Snippet.mp3");
-let snip5 = new Audio("Songs/You Cant Hurry Love Snippet.mp3");
-let snip6 = new Audio("Songs/My Girl Snippet.mp3");
-let snip7 = new Audio("Songs/IHeardItThroughTheGrapevine Snippet.mp3");
-let snip8 = new Audio("Songs/ReachOutI'llBeThere Snippet.mp3");
-let snip9 = new Audio("Songs/(IKnow)I'mLosingYou Snippet.mp3");
-let snip10 = new Audio("Songs/ICan'tHelpMyself(SugarPieHoneyBunch) Snippet.mp3");
-let snip11 = new Audio("Songs/Ain'tNoMountainHighEnough Snippet.mp3");
-let snip12 = new Audio("Songs/What'sGoingOnSnippet.mp3");
-let snip13 = new Audio("Songs/ItsTheSameOldSong Snippet.mp3");
-let snip14 = new Audio("Songs/Aint That Peculiar Snippet.mp3");
+let snip1 = new Audio("Songs/IWasMadeToLoveHer.mp3");
+let snip2 = new Audio("Songs/CloudNine.mp3");
+let snip3 = new Audio("Songs/ISecondThatEmotion.mp3");
+let snip4 = new Audio("Songs/Bernadette.mp3");
+let snip5 = new Audio("Songs/You Cant Hurry Love.mp3");
+let snip6 = new Audio("Songs/My Girl.mp3");
+let snip7 = new Audio("Songs/IHeardItThroughTheGrapevine.mp3");
+let snip8 = new Audio("Songs/ReachOutI'llBeThere.mp3");
+let snip9 = new Audio("Songs/(IKnow)I'mLosingYou.mp3");
+let snip10 = new Audio("Songs/ICan'tHelpMyself(SugarPieHoneyBunch).mp3");
+let snip11 = new Audio("Songs/Ain'tNoMountainHighEnough.mp3");
+let snip12 = new Audio("Songs/What'sGoingOn.mp3");
+let snip13 = new Audio("Songs/ItsTheSameOldSong.mp3");
+let snip14 = new Audio("Songs/Aint That Peculiar.mp3");
 
 let songs = [snip1, snip2, snip3, snip4, snip5, snip6, snip7, snip8,
              snip9, snip10, snip11, snip12, snip13, snip14];
