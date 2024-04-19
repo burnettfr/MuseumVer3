@@ -210,12 +210,12 @@ https://colorhunt.co/palette/ffecd64cb9e73559e00f2167 */
   }
 
 .correct {
-    box-shadow: 0 3px 4px 0 green;
+    box-shadow: 10px 10px 5px 0 green;
     opacity: 1.0;
   }
 
 .wrong {
-    box-shadow: 0 3px 4px 0 red;
+    box-shadow: 10px 10px 5px 0 red;
     opacity: 1.0;
 }
 
